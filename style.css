@@ -34,3 +34,48 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 6px;
     padding-bottom: 6px;
 }
+
+.navbar-toggle > span {
+    display: inline-block;
+    color: white;
+    font-weight: 700;
+}
+
+.navbar-default .navbar-toggle:hover {
+    background-color: #148f77;
+    border-color: #148f77;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+    width: 18px;
+    margin-left: 3px;
+}
+
+/***********************************/
+
+main {
+    padding-top: 50px;
+}
+
+section {
+    padding: 50px 0;
+    color: #2c3e50;
+}
+
+section.opposite {
+    background-color: #1abc9c;
+    color: white;
+}
+
+.avatar {
+    max-width: 240px;
+}
+
+.intro-title {
+    font-size: 44px;
+}
+
+.intro-text {
+    font-size: 20px;
+}
