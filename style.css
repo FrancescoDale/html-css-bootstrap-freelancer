@@ -134,6 +134,7 @@ section.opposite .separator::after {
     position: relative;
 }
 
+
 #portfolio img::before, #portfolio img::after {
     display: block;
     position: absolute;
