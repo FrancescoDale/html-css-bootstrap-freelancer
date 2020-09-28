@@ -83,7 +83,7 @@ section {
 }
 
 section.opposite {
-    background-color: #1abc9c;
+    background-color: #1ABC9C;
     color: white;
 }
 
@@ -134,41 +134,43 @@ section.opposite .separator::after {
     position: relative;
 }
 
-
-#portfolio img::before, #portfolio img::after {
-    display: block;
-    position: absolute;
-    visibility: hidden;
-    z-index: 1;
-    transition: visibility .1s ease-in-out;
-    cursor: pointer;
-}
-
-#portfolio img::before {
-    content: '';
-    top: 15px;
-    left: 50%;
-    transform: translateX(-50%);
+.test-effect:after {
+    content: "";
+    opacity: 0;
+    height: 100%;
     width: 100%;
-    max-width: 400px;
-    height: calc(100% - 30px);
-    border-radius: 6px;
-    background-color: rgba(26, 188, 156, .9);
+    border-radius: 10px;
+    background-color: #1ABC9C;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
 }
 
-#portfolio img::after {
-    content: '\f067';
-    font-family: "Font Awesome 5 Free";
-    font-weight: bold;
-    font-size: 80px;
-    color: #ffffff;
+.test-effect:hover::after{
+    opacity: 0.5;
+}
+
+.test-effect img{
+    border-radius: 10px;
+    width: 100%;
+}
+
+
+.test-effect i{
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: white;
+    z-index: 4;
+    opacity: 0;
+    transition: all 0.2s linear;
 }
 
-#portfolio img:hover:before, #portfolio img:hover:after {
-    visibility: visible;
+.test-effect:hover i{
+    opacity: 1;
 }
 
 #about button  {
