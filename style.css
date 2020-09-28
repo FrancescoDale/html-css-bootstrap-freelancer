@@ -135,12 +135,18 @@ section.opposite .separator::after {
 }
 
 #contact .form-control {
-    display: block;
     border: none;
     color: #6C757D;
     font-size: 24px;
 }
 
+
+#contact input {
+    font-size: 12px;
+    color: #148f77;
+    display:block;
+    margin-bottom: 40px;
+}
 
 footer {
     background-color: #2C3E50;
