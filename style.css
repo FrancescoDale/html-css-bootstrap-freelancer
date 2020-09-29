@@ -197,26 +197,43 @@ section.opposite .separator::after {
     background-color: #159A80;
 }
 
+footer {
+    color: #FFF;
+}
 .footer-top {
     background-color: #2C3E50;
-    color: #FFF;
     padding: 80px 0;
 }
 
 .footer-end {
-    background-color: #1A252F;
-    color: #FFF;
+    background-color: #1A252F;    
     padding: 20px 0;
 }
-.footer-top .box a {
-    text-decoration: none;
-    color: #1ABC9C;
+
+.social-icon {
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 2px solid white;
 }
 
-/* footer .box:nth-child(2), a:hover {
-    background-color: #FFF;
-} */
+.social-icon:not(:last-child) {
+    margin-right: 5px;
+}
 
+.social-icon i {
+    line-height: 48px;
+    color: white;
+}
+
+.social-icon:hover {
+    background-color: white;
+}
+
+.social-icon:hover i {
+    color: #212529;
+}
 
 
 @media screen and (min-width: 768px) {
